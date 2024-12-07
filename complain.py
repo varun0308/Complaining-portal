@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from datetime import datetime
 import os
 # MongoDB setup
-MONGO_URI = os.environ.get("MONGO_DB_URL")  # Replace with your MongoDB URI if needed
+MONGO_URI = st.secrets["MONGO_DB_URL"]  # Replace with your MongoDB URI if needed
 DATABASE_NAME = "complaints_db"
 COLLECTION_NAME = "complaints"
 
